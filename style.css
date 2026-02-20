@@ -1,57 +1,10 @@
-/* Smooth fade-in animation */
-.hero {
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-/* Floating effect */
-.hero h1 {
-    animation: floatText 3s ease-in-out infinite;
-}
-
-/* Button hover effect */
-.btn {
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-    background-color: #ff6600;
-}
-
-/* Smooth scroll */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Keyframes */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes floatText {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
+/* Header */
 header {
     background: #111;
     padding: 15px 40px;
@@ -75,13 +28,21 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 20px;
     background: linear-gradient(135deg, #1f1f1f, #333);
     color: white;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
+/* Floating animation for name */
+.hero h1 {
+    animation: floatText 3s ease-in-out infinite;
+}
+
+/* Button */
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -90,13 +51,21 @@ nav ul li a {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #ff6600;
+}
+
+/* Sections */
 section {
     padding: 60px 20px;
     text-align: center;
 }
 
+/* Skills */
 .skills-box span {
     display: inline-block;
     margin: 10px;
@@ -105,6 +74,7 @@ section {
     border-radius: 20px;
 }
 
+/* Project Card */
 .project-card {
     background: #f4f4f4;
     padding: 20px;
@@ -113,8 +83,29 @@ section {
     border-radius: 10px;
 }
 
+/* Footer */
 footer {
     background: #111;
     color: white;
     padding: 20px;
 }
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatText {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
