@@ -1,3 +1,51 @@
+/* Smooth fade-in animation */
+.hero {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Floating effect */
+.hero h1 {
+    animation: floatText 3s ease-in-out infinite;
+}
+
+/* Button hover effect */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #ff6600;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatText {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
